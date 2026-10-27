@@ -24,7 +24,7 @@ a.click('next');assert.equal(a.steps[1].hidden,false);a.click('back');assert.equ
 a.select('prediction','c');assert.equal(a.els['prediction-summary'].textContent,'Usually no');
 for(let i=0;i<5;i++)a.click('next'); // Skipping every optional selection must work.
 assert.equal(a.steps[5].hidden,false);assert.equal(a.els.next.hidden,true);assert.equal(a.els['end-actions'].hidden,false);assert.equal(a.els['priority-summary'].textContent,'No choice selected.');
-a.nav[4].handlers.click();a.select('priority','d');assert.equal(a.els['priority-summary'].textContent,'The target’s alternatives');
+a.nav[4].handlers.click();a.select('priority','d');assert.equal(a.els['priority-summary'].textContent,'What China can do instead');
 a.click('view-toggle');assert(a.steps.every(s=>!s.hidden));assert.equal(a.els.controls.hidden,true);
 a.click('view-toggle');assert.equal(a.steps[4].hidden,false);assert.equal(a.els.controls.hidden,false);
 a.click('print');assert.equal(a.window.printed,true);

@@ -1,0 +1,19 @@
+# Handout source and build files stay local; only the PDF in docs/ and dist/ is published.
+handout/
+
+# LaTeX build residue, wherever it appears
+*.aux
+*.log
+*.out
+*.toc
+*.nav
+*.snm
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
+*.bbl
+*.blg
+
+# OS files
+.DS_Store

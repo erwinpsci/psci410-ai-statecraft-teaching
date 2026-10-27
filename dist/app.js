@@ -5,7 +5,7 @@
   const answers = {prediction: null, priority: null};
   const texts = {
     prediction: {a: 'Usually yes', b: 'Only under certain conditions', c: 'Usually no', d: 'Need more information'},
-    priority: {a: 'Control of indispensable technology', b: 'Government authority and enforcement', c: 'Cooperation from firms and other countries', d: 'The target’s alternatives'}
+    priority: {a: 'Who controls the technology', b: 'Whether the US can enforce it', c: 'Whether others go along', d: 'What China can do instead'}
   };
   let current = 0;
   let all = false;
